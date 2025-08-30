@@ -1,6 +1,11 @@
 getQuantityButton = document.querySelector(".quantity-button");
 getSketchContainer = document.querySelector(".sketch-container");
 
+function randomInt() {
+    const min = 0;
+    const max = 255;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function makeGrids(size) {
     const createSketchScreen = document.createElement("div");
@@ -17,7 +22,7 @@ function makeGrids(size) {
             row.style.height = `${600 / size}px`;
 
             row.addEventListener("mouseover", function(e) {
-                row.style.backgroundColor = "blue";
+                row.style.backgroundColor = `rgb(${randomInt()}, ${randomInt()}, ${randomInt()})`;
             });
 
             column.appendChild(row);

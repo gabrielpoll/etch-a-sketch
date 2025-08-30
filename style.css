@@ -31,7 +31,7 @@ footer {
     justify-content: center;
     width: 800px;
     height: 800px;
-    background-color: #991101;
+    background-color: rgb(red, green, blue);
     padding-top: 50px;
 }
 

@@ -17,7 +17,6 @@ function makeGrids(size) {
         for (let j = 1; j <= size; j++) {
             let row = document.createElement("div");
             row.classList.add("row");
-            row.style.border = "1px solid black";
             row.style.width = `${600 / size}px`;
             row.style.height = `${600 / size}px`;
 
